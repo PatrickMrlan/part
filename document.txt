@@ -1,0 +1,5 @@
+框架：element-ui
+文档：https://element.eleme.cn/#/zh-CN/component/select
+
+树形下拉:vue-treeselect
+文档：https://www.vue-treeselect.cn/#disable-item-selection

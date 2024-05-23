@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./logo-s.png">
+    <link rel="stylesheet" href="./static/swiper-bundle.min.css">
+    <title>产业功能区园区安全监管平台</title>
+    <style>
+        html {
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        window._AMapSecurityConfig = {
+            securityJsCode: '3a47d804a3f7bd1b0db5ec7e18a0c1af'
+        }
+    </script>
+    <!-- 引入高德地图 -->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=104a99165b1bec3f4b408aa2149ff107">
+    </script>
+    <script
+        src="https://webapi.amap.com/maps?v=1.4.15&key=104a99165b1bec3f4b408aa2149ff107&plugin=AMap.Geocoder,AMap.MouseTool,AMap.CircleEditor,AMap.GraspRoad,AMap.ToolBar,AMap.Driving,AMap.RangingTool,AMap.Autocomplete,AMap.PlaceSearch">
+        </script>
+    <script type="text/javascript" src="./static/swiper-bundle.min.js"></script>
+
+    <!-- 使用CDN的JS文件 -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+        <% } %>
+
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+                Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
